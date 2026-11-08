@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="为 AArch64 Cortex-A53 裸机工程准备的 CCS 界面与调试学习手册。单文件，离线阅读。">
+<title>CCS 慢慢上手 · Arm 开发工作手册</title>
+<style>/*__STYLE__*/</style>
+</head>
+<body>
+<div class="reading-track" aria-hidden="true"><div id="reading-progress"></div></div>
+<a class="skip-link" href="#main">跳到正文</a>
+<header class="topbar">
+  <a class="brand" href="#start"><span class="brand-mark" aria-hidden="true">c<span>↗</span></span><span>CCS 慢慢上手<small>一份可以动手的开发手册</small></span></a>
+  <div class="top-tools"><label class="version-control"><span>你的版本</span><select id="version" aria-label="选择 CCS 版本"><option value="theia">20.x+ Theia</option><option value="eclipse">12.x Eclipse</option></select></label><button id="theme-toggle" class="icon-button" aria-label="切换深色主题" title="切换明暗主题">◐</button><button id="nav-toggle" class="mobile-only icon-button" aria-label="展开章节目录" aria-expanded="false">☰</button></div>
+</header>
+<aside class="sidebar" id="sidebar" aria-label="章节目录">
+  <div class="sidebar-intro"><span class="eyebrow">从认识界面，到独立调试</span><button id="search-jump" class="search-jump"><span>⌕</span> 我想在 CCS 里…… <span>↗</span></button></div>
+  <nav id="chapter-nav"></nav>
+  <div class="sidebar-progress"><div><span>我的学习进度</span><strong id="completion-label">0%</strong></div><progress id="completion-progress" value="0" max="100"></progress><small id="completion-count">从第一个小练习开始</small></div>
+</aside>
+<main id="main">
+  <section class="hero tracked" id="start" data-nav="start">
+    <div class="hero-copy"><span class="eyebrow"><i class="live-dot"></i> ARM 开发者的桌边手册 · 实图版</span><h1>把陌生的 CCS，<br>变成顺手的工作台<span class="title-dot">。</span></h1><p>对着真实界面，认清窗口，读懂设置。<br class="wide-only">每一个按钮，都从「我现在想做什么」讲起。</p><div class="hero-actions"><a class="primary-button" href="#real-ui">先看真实界面 <span>↘</span></a><a class="text-link" href="#settings-guide">设置界面逐项读 →</a></div></div>
+    <div class="hero-art" aria-hidden="true"><svg viewBox="0 0 250 230"><path d="M33 188C-7 129 26 37 109 30c79-7 149 45 119 125s-150 92-195 33Z" fill="var(--sage-soft)"/><path d="M36 178h179" stroke="var(--line-strong)" stroke-width="2"/><rect x="57" y="49" width="135" height="103" rx="9" fill="var(--card)" stroke="var(--green)" stroke-width="2"/><path d="M57 69h135M81 69v83M81 128h111" stroke="var(--green)" opacity=".5"/><circle cx="67" cy="59" r="2" fill="var(--clay)"/><circle cx="74" cy="59" r="2" fill="var(--green)"/><path d="m102 88-9 9 9 9m21-18 9 9-9 9m-9-21-6 24" fill="none" stroke="var(--green)" stroke-width="2.5" stroke-linecap="round"/><path d="M111 152v18m28-18v18m-42 0h56" stroke="var(--green)" stroke-width="2"/><rect x="146" y="108" width="55" height="45" rx="5" fill="var(--card)" stroke="var(--clay)" stroke-width="2"/><path d="M153 133h9l6-14 8 25 7-18 5 7h8" fill="none" stroke="var(--clay)" stroke-width="2"/><path d="M29 165c-15-19-10-34 6-30 12 3 12 19-6 30Zm0 0c16-22 33-23 34-9 1 12-17 14-34 9Zm0 0v14" fill="var(--green)" opacity=".65"/><path d="m204 53 5-12m-2 18 13-4" stroke="var(--clay)" stroke-width="2" stroke-linecap="round"/></svg><span>读得懂 · 找得到 · 做得出</span></div>
+  </section>
+  <div class="environment-strip"><span><i class="live-dot"></i><b id="version-summary">Theia 主线</b></span><span>Cortex-A53 · AArch64 裸机</span><span>GNU · XDS200</span><span>每天 2 小时</span></div>
+  <div id="version-notice" class="version-notice"></div>
+  <section class="real-ui-section tracked" id="real-ui" data-nav="real-ui">
+    <div class="section-heading"><div><span class="eyebrow">这一次，直接对着真实窗口看</span><h2>真正的 CCS，长这样</h2></div><span class="soft-label" id="real-image-count"></span></div>
+    <p class="section-lead">下方是 TI 官方手册中的原始界面截图。先看整张工作台，再看具体窗口；点击图片可按原始尺寸查看，并继续放大。</p>
+    <div class="photo-intro" id="photo-version-note"></div>
+    <div class="photo-group-buttons" id="photo-groups" role="group" aria-label="选择截图类别"></div>
+    <label class="photo-picker"><span>选择一个真实窗口</span><select id="photo-select" aria-label="选择官方界面截图"></select></label>
+    <div id="real-ui-viewer"></div>
+    <div class="real-ui-links"><a href="#settings-guide">逐项读懂设置 ↗</a><a href="#sandbox">去交互沙盘练一遍 ↗</a><a href="#learning-path">按 7 天路线学习 ↗</a></div>
+  </section>
+  <section class="sandbox-section tracked" id="sandbox" data-nav="sandbox">
+    <div class="section-heading"><div><span class="eyebrow">先在这里，熟悉一下</span><h2>你的第一张 CCS 地图</h2></div><span class="soft-label">交互示意 · 不连接硬件</span></div>
+    <p class="section-lead">点击图标或窗口，看看它解决什么问题。切换工作状态，观察同一套工具如何重新摆放。</p>
+    <div class="sandbox-controls"><div class="segmented" role="group" aria-label="工作状态"><button id="mode-edit" data-mode="edit" class="selected">编辑布局</button><button id="mode-debug" data-mode="debug">调试布局</button></div><button id="tour-start" class="outline-button">◎ 新手带路</button></div>
+    <div class="sandbox-scroll"><div id="ide-sandbox" class="ide" aria-label="可点击的 CCS 界面示意"></div></div>
+    <div id="tour-bar" class="tour-bar" hidden></div>
+    <div id="sandbox-card" class="sandbox-card" aria-live="polite"></div>
+    <p class="caption">按官方界面结构绘制的 CSS / SVG 线框；比例与位置便于辨认，图标是教学示意。不同小版本、插件及目标设备会改变布局。</p>
+  </section>
+  <section class="learning-section tracked" id="learning-path" data-nav="learning-path"><div class="section-heading"><div><span class="eyebrow">每天一点，学会就打勾</span><h2>7 天，走完一个完整闭环</h2></div><span class="soft-label">4 个阶段 · 每天 2h</span></div><div id="stage-grid" class="stage-grid"></div><div class="callout"><strong>从你已有的工程出发</strong><p>主线沿用附件中的 Adapter / Algo / Application / Common / Driver / HgoP / Thirdparty 多工程结构。具体 SoC / 板卡、CCS 小版本及 C / Git 熟练程度尚未确认；涉及 DDR 初始化、烧录算法、实时访问和计时能力的步骤，页面会提示实机核对。</p></div></section>
+  <div class="chapter-divider"><span>PART 01</span><h2>沿着屏幕，把工具认全</h2><p>9 个界面区域 · 每章都能照着做</p></div>
+  <div id="regions"></div>
+  <section class="settings-intro tracked" id="settings-guide" data-nav="settings-guide"><span class="eyebrow">新增 · 打开窗口之后，下一步怎么选</span><h2>设置界面，逐项读懂</h2><p>先判断设置作用在哪一层，再修改一个字段，最后用日志或实际行为验证。这里讲清楚字段是什么意思、对你的 A53 GNU 工程怎么用，以及哪些示例值不能照搬。</p><div class="settings-scope-map"><div><b>① 全局 / 工作空间</b><span>字体、编辑器、工具发现</span></div><div><b>② 工程 / 构建配置</b><span>编译、链接、依赖、输出</span></div><div><b>③ 调试 / 目标 / 视图</b><span>连接、加载、运行与观察</span></div></div><div id="settings-jumps" class="settings-jumps"></div><p class="caption">截图显示的是官方示例工程。C2000、MSPM0、Cortex-M 等器件名、编译器、地址、复位策略和时钟值，都不作为你的 A53 工程推荐值。</p></section>
+  <div id="settings-chapters"></div>
+  <div class="chapter-divider"><span>PART 02</span><h2>把零散操作，串成解决办法</h2><p>5 个专题 · 从工程导入到问题定位</p></div>
+  <div id="topics"></div>
+  <section class="task-section tracked" id="task-index" data-nav="task-index"><div class="section-heading"><div><span class="eyebrow">遇到事情，来这里找入口</span><h2>我想在 CCS 里……</h2></div><span id="task-count" class="soft-label"></span></div><label class="task-search"><span>⌕</span><input id="task-search" type="search" placeholder="试试：断点、头文件、乱码、内存、Build…" aria-label="搜索任务、菜单或快捷键"></label><p class="caption" id="index-version"></p><div id="task-table"></div></section>
+  <section class="limits-section tracked" id="limitations" data-nav="limitations"><span class="eyebrow">这份手册的边界，也写在这里</span><h2>还有哪些不完善，接下来能补什么</h2><div class="limits-grid"><article><h3>目前仍不完整的地方</h3><ul><li><strong>还不是你的板卡实录。</strong>官方原图能帮助认窗口，但没有在你的具体 SoC、SDK、CCS 小版本和七个工程上录制操作；截图中的目标和参数会与实际不同。</li><li><strong>GNU AArch64 专用属性图仍有缺口。</strong>可以核对 -I、-D、-O、-g、-T、map 等参数，却不能用别的编译器页面替代所有 GNU 插件的叶子设置。缺图或入口未确认的地方会明确说明。</li><li><strong>硬件闭环尚未实测。</strong>XDS200 连接、DDR 初始化、缓存一致性、运行中刷新、Profile Clock 与烧录流程，仍要在具体目标上验证。</li><li><strong>不是所有小版本的逐项对照。</strong>主线图据 CCS 20.5.1 官方手册；旧版补充图据 CCS 12.8。手册沿用的截图可能显示更早构建号，图注会区分来源版本与画面内容。</li></ul></article><article><h3>优先扩展的四个方向</h3><ol><li><strong>做一份你的工程实录：</strong>确定完整 CCS 版本、SoC/板卡与 SDK，逐屏补齐 Application 及依赖工程的设置和成功日志。</li><li><strong>录制连接到 main 的完整过程：</strong>.ccxml → 初始化 → 连接指定 A53 核 → Load ELF → 断点单步，保存每一步的真实状态。</li><li><strong>补一套可运行的小实验：</strong>缺头文件、缺库、段溢出、宏分支、Graph 已知数组、.su 栈检查，配“故障 → 修复 → 验证”文件。</li><li><strong>做板级调试专题：</strong>按该 SoC 文档补启动链、异常级、MMU/缓存、外部存储烧录与经验证的计时方式。</li></ol></article></div><p class="caption">本页的“自检勾选”由你记录学习结果；浏览器功能测试通过，不代表真实硬件调试已经验收。</p></section>
+  <section class="sources-section tracked" id="sources" data-nav="sources"><span class="eyebrow">把知识的来处留下</span><h2>核对依据与适用边界</h2><p>内容核对日期：2026 年 11 月 7 日。以 TI 的 CCS 20.x / CCS 12.x 官方手册为界面依据，GNU 文档为编译与链接依据。20.x+ 代表界面家族，不保证未来版本菜单完全不变；已确认的小版本差异在正文中单独注明。</p><div class="callout"><strong>看到「待核对」时，怎么继续？</strong><p>先在 Help → About 中记录完整版本号；在目标视图的菜单、工具提示和 Keyboard Shortcuts 中查命令名。硬件相关能力还要对照具体 SoC 的 TRM（技术参考手册）、SDK 及实际连接后的可用按钮。不要用另一个芯片的视频代替确认。</p></div><div id="sources-list"></div><p class="caption">手册内容、交互与进度保存均可离线使用。以下官方参考链接仅在你主动打开时需要联网。示例地址、数值和波形均用于教学，不是你的板卡测量结果。</p></section>
+  <footer><span class="brand-footer">慢慢上手，也能用得很专业。</span><span>单文件离线手册 · 为你的 Arm 工程编写</span><a href="#start">回到开头 ↑</a></footer>
+</main>
+<dialog id="image-dialog" aria-labelledby="image-dialog-title"><div class="image-dialog-header"><div><h2 id="image-dialog-title"></h2><p id="image-dialog-meta"></p></div><button id="image-close" class="outline-button" autofocus>关闭 ×</button></div><div class="image-zoom-controls" role="group" aria-label="截图缩放"><button data-image-zoom="fit">适应窗口</button><button data-image-zoom="1">原始尺寸 100%</button><button data-image-zoom="1.5">150%</button><button data-image-zoom="2">200%</button><span>放大后可横向、纵向滚动；Esc 关闭</span></div><div id="image-viewport"><img id="image-dialog-img" alt=""></div><p id="image-dialog-context"></p></dialog>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<noscript><div class="noscript">此离线手册需要启用浏览器 JavaScript 才能显示章节和交互。请使用支持 JavaScript 的桌面浏览器打开本文件。</div></noscript>
+<script>/*__DATA__*/</script>
+<script>/*__APP__*/</script>
+</body></html>

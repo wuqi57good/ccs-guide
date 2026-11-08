@@ -1,0 +1,1110 @@
+[
+  {
+    "id": "theia-ccs_overview-ui",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_overview-ui.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_ide.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_overview-ui.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "Theia 编辑工作台：先认出六个大区域",
+    "context": "图中打开 MSPM0 工程并使用 TI Clang；是来自 20.5.1 手册的官方布局示例，不是你的 A53 工程实拍。",
+    "regions": [
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r9"
+    ],
+    "settings": [],
+    "notes": [
+      "左侧 Activity Bar 切换 Explorer、Search 与 Debug；右侧 Outline 列出当前文件函数。",
+      "中央 Editor 编辑源码，底部 Panel 承载 Output / Problems；底边 Status Bar 显示行列、编码等状态。",
+      "这是 Theia 工作台，没有 Eclipse 的 CCS Edit / CCS Debug 透视图切换器。"
+    ],
+    "width": 1476,
+    "height": 850,
+    "bytes": 158679,
+    "group": "edit"
+  },
+  {
+    "id": "theia-ccs_ide-code-composer-studio-settings",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_ide-code-composer-studio-settings.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_ide.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_ide-code-composer-studio-settings.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "CCS Settings：编译器发现路径与已识别工具链",
+    "context": "图中已发现的 Arm TI Clang 和 GNU 工具链只是作者机器的安装结果；不证明已安装你的 aarch64-elf- 工具链。",
+    "regions": [
+      "r8",
+      "r9"
+    ],
+    "settings": [
+      "s-ccs",
+      "s-gnu"
+    ],
+    "notes": [
+      "上半区 Compiler discovery-path 决定去哪找编译器；下半区 Discovered compilers 才是扫描结果。",
+      "让 CCS 找到编译器与给某个工程选择编译器是两步；工程仍需在 Properties 中检查。"
+    ],
+    "width": 959,
+    "height": 641,
+    "bytes": 39979,
+    "group": "settings"
+  },
+  {
+    "id": "theia-ccs_ide-code-composer-studio-settings2",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_ide-code-composer-studio-settings2.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_ide.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_ide-code-composer-studio-settings2.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "CCS Settings：构建日志详细程度",
+    "context": "图示 Build-output verbosity 为 Automatic；不同版本选项文字可能有变化。",
+    "regions": [
+      "r4",
+      "r9"
+    ],
+    "settings": [
+      "s-ccs"
+    ],
+    "notes": [
+      "Build-output verbosity 控制构建输出的详细程度，不决定优化等级。",
+      "Build-output log file 可指定日志文件；排错时仍应读取首条实际编译/链接错误。"
+    ],
+    "width": 958,
+    "height": 642,
+    "bytes": 24970,
+    "group": "settings"
+  },
+  {
+    "id": "theia-ccs_ide-general-settings",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_ide-general-settings.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_ide.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_ide-general-settings.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "General Settings：字号、自动保存与作用范围",
+    "context": "图中是通用 Theia 设置页；截图只展示部分条目，没有显示完整字体设置。",
+    "regions": [
+      "r9"
+    ],
+    "settings": [
+      "s-general"
+    ],
+    "notes": [
+      "顶部 User / Workspace 标签决定设置范围；工程内的设置可能覆盖用户设置。",
+      "用 Search Settings 搜索 Font Size、Font Family 或 Encoding，比逐层展开更快。"
+    ],
+    "width": 1776,
+    "height": 741,
+    "bytes": 54969,
+    "group": "settings"
+  },
+  {
+    "id": "theia-ccs_ide-toolbar",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_ide-toolbar.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_ide.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_ide-toolbar.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "Theia 主工具栏：显示、构建与运行按钮",
+    "context": "官方示例只展示工具栏条带；图标排列可自定义，且是否可用取决于当前选中对象和调试状态。",
+    "regions": [
+      "r1"
+    ],
+    "settings": [
+      "s-general"
+    ],
+    "notes": [
+      "View → Toggle Toolbar 可控制这排按钮是否显示。",
+      "先悬停读 tooltip 再操作；图标灰色时应先检查工程选择、调试连接和目标状态。"
+    ],
+    "width": 569,
+    "height": 66,
+    "bytes": 8225,
+    "group": "edit"
+  },
+  {
+    "id": "theia-ccs_project-explorer01",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_project-explorer01.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_project-management.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_project-explorer01.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "Explorer 与磁盘目录：虚拟分组和真实文件",
+    "context": "图中是 MSPM0 示例，并叠放了 Windows 文件资源管理器；用于比较 IDE 分组与磁盘目录。",
+    "regions": [
+      "r2"
+    ],
+    "settings": [
+      "s-project"
+    ],
+    "notes": [
+      "Generated Source、Referenced Source 是 Explorer 的组织方式，不一定是同名磁盘文件夹。",
+      "右边磁盘图显示工程描述文件与源码；共享工程时不能只复制 Explorer 里看得到的一个 .c。"
+    ],
+    "width": 1081,
+    "height": 705,
+    "bytes": 116445,
+    "group": "edit"
+  },
+  {
+    "id": "theia-ccs_project-general-properties01",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_project-general-properties01.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_project-management.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_project-general-properties01.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "工程 General：器件、探针和编译器",
+    "context": "实际图示器件 MSPM0G3507 / Cortex-M0+，探针 XDS110，编译器 TI Clang；不是 A53 / XDS200 / GNU 的配置值。",
+    "regions": [
+      "r2",
+      "r8"
+    ],
+    "settings": [
+      "s-project"
+    ],
+    "notes": [
+      "先读顶部工程名及 [Debug]，避免把设置改到另一个工程或配置。",
+      "Connection 是探针选择；Compiler 是工程工具链选择，二者不能互相替代。",
+      "图中 Manage the project’s target-configuration automatically 控制自动管理目标配置。"
+    ],
+    "width": 995,
+    "height": 589,
+    "bytes": 34880,
+    "group": "settings"
+  },
+  {
+    "id": "theia-ccs_project-general-product-dependencies",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_project-general-product-dependencies.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_project-management.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_project-general-product-dependencies.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "Dependencies：产品依赖与工程依赖分开看",
+    "context": "图示产品是 MSPM0 SDK 与 SysConfig；你的 A53 SDK 名称和版本需要按项目实际依赖选择。",
+    "regions": [
+      "r2",
+      "r8"
+    ],
+    "settings": [
+      "s-dependencies"
+    ],
+    "notes": [
+      "上方 Product dependencies 是 SDK/工具依赖，下方 Project dependencies 是工作空间内的工程依赖。",
+      "添加库工程为依赖会影响构建顺序；链接命令中仍要核对库文件是否真正参与链接。"
+    ],
+    "width": 994,
+    "height": 591,
+    "bytes": 30816,
+    "group": "settings"
+  },
+  {
+    "id": "theia-ccs_project-general-variables",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_project-general-variables.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_project-management.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_project-general-variables.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "Variables：路径变量及展开后的值",
+    "context": "这是 MSPM0 示例的变量列表；截图中的用户目录、SDK 目录和环境变量不能照抄。",
+    "regions": [
+      "r2",
+      "r8"
+    ],
+    "settings": [
+      "s-dependencies",
+      "s-gnu"
+    ],
+    "notes": [
+      "下拉框可显示用户定义与系统变量；看变量右侧的展开值，确认路径落到正确文件夹。",
+      "变量帮助减少绝对路径，但变量引用的目录也必须随工程一起提供或在接收机器上正确配置。"
+    ],
+    "width": 994,
+    "height": 585,
+    "bytes": 68423,
+    "group": "settings"
+  },
+  {
+    "id": "theia-ccs_project-properties-builder",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_project-properties-builder.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_project-management.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_project-properties-builder.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "Build：构建命令、并行数和输出目录",
+    "context": "图示为 CCS 管理构建，使用 gmake；它不是 GNU Compiler 具体参数分类的截图。",
+    "regions": [
+      "r8"
+    ],
+    "settings": [
+      "s-builder",
+      "s-gnu"
+    ],
+    "notes": [
+      "Build-command 与 Build-command flags 决定调用哪个构建程序；并行构建是另一项开关。",
+      "Makefile generation mode 决定是否自动管理 makefile；已有自定义 Makefile 工程必须核对该模式。",
+      "Build-directory 与 make 的 build/clean target 直接影响生成文件放在哪里、清理什么。"
+    ],
+    "width": 1115,
+    "height": 493,
+    "bytes": 38722,
+    "group": "settings"
+  },
+  {
+    "id": "theia-ccs_project-pre-link-command",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_project-pre-link-command.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_project-management.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_project-pre-link-command.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "Tools 下的 Arm Linker：命令与参数入口",
+    "context": "图示是 TI Clang 的 Arm Linker，并在命令前加了批处理；只能借它认识工具分类，不能把图中参数套到 GNU AArch64。",
+    "regions": [
+      "r8"
+    ],
+    "settings": [
+      "s-gnu",
+      "s-builder"
+    ],
+    "notes": [
+      "左边 Tools 把 Compiler 与 Linker 分开；头文件 -I 与宏 -D 应在编译步骤核对。",
+      "图中红框是 pre-link 批处理示例，初学者不需要照抄；GNU 链接脚本与 -Map 参数应看实际链接命令。"
+    ],
+    "width": 630,
+    "height": 246,
+    "bytes": 27561,
+    "group": "settings"
+  },
+  {
+    "id": "theia-ccs_project-dependency01",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_project-dependency01.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_project-management.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_project-dependency01.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "添加工程依赖：选择库工程及其配置",
+    "context": "示例依赖 FreeRTOS 库工程；你的 Application / Algo / Driver 依赖应按工程架构选择。",
+    "regions": [
+      "r2",
+      "r8"
+    ],
+    "settings": [
+      "s-dependencies"
+    ],
+    "notes": [
+      "Project dependencies 区域的 + 打开 Add project dependency。",
+      "选择的是当前工作空间内已存在的工程，并检查要构建它的哪个配置。"
+    ],
+    "width": 872,
+    "height": 438,
+    "bytes": 31829,
+    "group": "settings"
+  },
+  {
+    "id": "theia-ccs_project-output-view",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_project-output-view.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_project-management.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_project-output-view.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "Output：完整构建命令和失败上下文",
+    "context": "图示 MSPM0 / TI Clang 构建报错；GNU 报错用词不同，但读取方法相同。",
+    "regions": [
+      "r4"
+    ],
+    "settings": [
+      "s-ccs"
+    ],
+    "notes": [
+      "右侧输出通道下拉框要选构建输出；不要误看调试器或其他扩展通道。",
+      "日志中能看到实际编译器命令、文件名和 gmake 结果；先找第一条错误，再看后续连锁失败。"
+    ],
+    "width": 1090,
+    "height": 335,
+    "bytes": 27242,
+    "group": "edit"
+  },
+  {
+    "id": "theia-ccs_project-problems-view",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_project-problems-view.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_project-management.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_project-problems-view.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "Problems：错误与警告的跳转列表",
+    "context": "图示一个缺分号错误和一个函数声明警告；它是诊断摘要，不是完整构建日志。",
+    "regions": [
+      "r4"
+    ],
+    "settings": [],
+    "notes": [
+      "红叉与黄三角分别提示错误、警告；每项显示所在文件、行号与列号。",
+      "选择诊断跳到对应位置后，回 Output 读完整上下文，避免只改表面症状。"
+    ],
+    "width": 704,
+    "height": 158,
+    "bytes": 13383,
+    "group": "edit"
+  },
+  {
+    "id": "theia-ccs_debug-views",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_debug-views.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_debug-main.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_debug-views.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "Theia 调试工作台：暂停后去哪看什么",
+    "context": "图示 MSPM0 / Cortex-M0+ 的调试会话；采用的是 Theia 工作台，不能把寄存器名或目标状态照搬到 A53。",
+    "regions": [
+      "r1",
+      "r3",
+      "r5"
+    ],
+    "settings": [
+      "s-views"
+    ],
+    "notes": [
+      "左侧自上而下是 Threads、Call Stack、Variables、Watch、Breakpoints 与 Target Configuration。",
+      "中央黄色源码行表示当前暂停位置，底部 Output 展示调试输出；先选择正确核心再解释这些数据。",
+      "切换到 Debug 侧栏会重新安排视图，但并不创建 Eclipse Perspective。"
+    ],
+    "width": 1499,
+    "height": 892,
+    "bytes": 123571,
+    "group": "debug"
+  },
+  {
+    "id": "theia-ccs_debug-target_config_editor",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_debug-target_config_editor.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_debug-main.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_debug-target_config_editor.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "目标配置 Basic：探针与器件必须匹配",
+    "context": "图示 CC1352P1F3 与 XDS110；你的配置应选择实际 A53 SoC/板卡和 XDS200。",
+    "regions": [
+      "r7"
+    ],
+    "settings": [
+      "s-target"
+    ],
+    "notes": [
+      "Connection 选择探针，Board or Device 选择实际板卡或芯片；仅看到同类 Arm 内核不能代替具体器件选择。",
+      "右侧可见 CPU 与初始化脚本；是否需要 GEL/板级初始化由真实目标决定。"
+    ],
+    "width": 1003,
+    "height": 821,
+    "bytes": 37237,
+    "group": "settings"
+  },
+  {
+    "id": "theia-ccs_debug-target_config_editor_advanced",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_debug-target_config_editor_advanced.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_debug-main.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_debug-target_config_editor_advanced.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "目标配置 Advanced：扫描链、探针与 Test Connection",
+    "context": "图中为 CC1352P1F3 / XDS110 的高级选项；XDS200 的属性项和可用值可能不同。",
+    "regions": [
+      "r7"
+    ],
+    "settings": [
+      "s-target"
+    ],
+    "notes": [
+      "左边树描述连接与核心，右边显示所选节点属性；选错节点会看到另一组设置。",
+      "Test Connection(s) 按钮用于基础扫描链测试；不能用测试成功推断 DDR 与应用已准备好。"
+    ],
+    "width": 1010,
+    "height": 821,
+    "bytes": 50511,
+    "group": "settings"
+  },
+  {
+    "id": "theia-ccs_debug-test-connection",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_debug-test-connection.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_debug-main.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_debug-test-connection.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "Test Connection 成功示例：看测试项与总结",
+    "context": "这是官方手册的成功日志示例，不是对用户 XDS200 或板卡进行过的实际测试。",
+    "regions": [
+      "r7"
+    ],
+    "settings": [
+      "s-target"
+    ],
+    "notes": [
+      "逐项看 Scan tests 的 skipped 与 failed 计数，不能只看窗口正常关闭。",
+      "图末写出 JTAG IR integrity scan-test succeeded；后续仍需验证连接核心、初始化内存和加载程序。"
+    ],
+    "width": 468,
+    "height": 397,
+    "bytes": 19417,
+    "group": "debug"
+  },
+  {
+    "id": "theia-ccs_debug-program-memory-load-options",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_debug-program-memory-load-options.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_debug-main.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_debug-program-memory-load-options.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "Debug：加载校验、连接行为和复位选项",
+    "context": "图示 MSPM0L1306 / Cortex-M0+ / XDS110；A53 的可用选项与效果必须按目标后端确认。",
+    "regions": [
+      "r5"
+    ],
+    "settings": [
+      "s-debug"
+    ],
+    "notes": [
+      "Category 为 Program/Memory Load Options；这里集中设置加载校验、连接后是否停机及加载/重启时复位。",
+      "Halt at program exit 和 CIO 等选项可能占断点资源；不要把所有复选框都打开当成更可靠。"
+    ],
+    "width": 937,
+    "height": 807,
+    "bytes": 52637,
+    "group": "settings"
+  },
+  {
+    "id": "theia-ccs_debug-debugger-options",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_debug-debugger-options.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_debug-main.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_debug-debugger-options.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "Debugger Options：自动跑到 main 与实时访问",
+    "context": "图示 Cortex-M0+ / XDS110 调试选项；菜单出现不等于 A53 支持 C2000 的完整 Real-time Mode。",
+    "regions": [
+      "r5",
+      "r8"
+    ],
+    "settings": [
+      "s-debug"
+    ],
+    "notes": [
+      "Auto Run Options 的 Run to symbol 与复选框共同决定加载或 Restart 后是否自动跑到 main。",
+      "Halt the target before any debugger access 会影响实时执行；电机等实时任务必须先核实访问方式。",
+      "Allow software breakpoints 与目标可写代码区有关；实际硬件断点资源仍有限。"
+    ],
+    "width": 974,
+    "height": 735,
+    "bytes": 58373,
+    "group": "settings"
+  },
+  {
+    "id": "theia-cortexa53_dis_options",
+    "version": "theia",
+    "file": "screenshots/theia-cortexa53_dis_options.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_debug-main.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/cortexa53_dis_options.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "Cortex-A53 专属：反汇编的 A32/A64 显示模式",
+    "context": "实际图示 AM6548_EVM.ccxml、XDS110 USB Debug Probe_0 / CortexA53_0_0；内核是 A53，但探针和板卡仍不是用户已确认的 XDS200 环境。",
+    "regions": [
+      "r6",
+      "r8"
+    ],
+    "settings": [
+      "s-debug",
+      "s-views"
+    ],
+    "notes": [
+      "Category 明确写 Cortex A53 Disassembly Style Options，可区别于 Cortex-M 或 C2000 的截图。",
+      "可见 Mixed A32/A64、A64 Only、A32 ARM Only、A32 Thumb Only；这是反汇编显示解释模式，不是编译架构开关。",
+      "你的 -march=armv8-a+fp+simd 仍要在 GNU 编译命令中核对，不能靠切显示模式改变程序架构。"
+    ],
+    "width": 615,
+    "height": 461,
+    "bytes": 16951,
+    "group": "settings"
+  },
+  {
+    "id": "theia-ccs_debug-watch_view_theia",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_debug-watch_view_theia.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_debug-main.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_debug-watch_view_theia.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "Watch：数组展开、类型和地址",
+    "context": "截图显示 long 型示例数组和 @Data 地址；元素类型、宽度及地址都是示例，不能直接套入 A53 数据布局。",
+    "regions": [
+      "r5"
+    ],
+    "settings": [
+      "s-views"
+    ],
+    "notes": [
+      "数组展开后可以分段看元素；悬停提示同时给出类型和地址。",
+      "工具栏包含添加表达式、刷新等操作；运行中能否连续刷新仍取决于目标支持。"
+    ],
+    "width": 420,
+    "height": 216,
+    "bytes": 12283,
+    "group": "debug"
+  },
+  {
+    "id": "theia-ccs_debug-registers_view_theia_2",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_debug-registers_view_theia_2.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_debug-main.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_debug-registers_view_theia_2.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "Registers：内核寄存器与位域展开",
+    "context": "图中 PC、SP、LR、xPSR、R0 等属于 Cortex-M 风格，绝不是 AArch64 的 X0…X30 / PSTATE 截图。",
+    "regions": [
+      "r6"
+    ],
+    "settings": [
+      "s-views"
+    ],
+    "notes": [
+      "三角箭头展开寄存器位域；名称、Value 与 Location 各有不同含义。",
+      "A53 应按自身内核与 SoC 找寄存器；不要在本机寻找图中的 xPSR 或 ADC0 分组。"
+    ],
+    "width": 601,
+    "height": 886,
+    "bytes": 27820,
+    "group": "debug"
+  },
+  {
+    "id": "theia-ccs_debug-disassembly_view-theia_2",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_debug-disassembly_view-theia_2.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_debug-main.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_debug-disassembly_view-theia_2.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "Disassembly：地址、机器码与汇编指令",
+    "context": "图中为使用 r0/r1 等的 Cortex-M 示例指令，不是 A64 汇编；仅借它认列和工具栏位置。",
+    "regions": [
+      "r6"
+    ],
+    "settings": [
+      "s-views"
+    ],
+    "notes": [
+      "从左到右可见地址、机器码与指令；符号名把函数与地址对应起来。",
+      "地址框可跳转，工具栏可回当前 PC 和做汇编单步；单步粒度不同于 C 源码行。"
+    ],
+    "width": 692,
+    "height": 955,
+    "bytes": 143140,
+    "group": "debug"
+  },
+  {
+    "id": "theia-ccs_debug-memory_view_theia_2",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_debug-memory_view_theia_2.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_debug-main.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_debug-memory_view_theia_2.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "Memory：符号地址与显示格式",
+    "context": "图中 Location 为 main，显示 32-Bit Hex – TI Style，并含 MSPM0/TI 启动符号；不是 A53 地址布局。",
+    "regions": [
+      "r6"
+    ],
+    "settings": [
+      "s-views"
+    ],
+    "notes": [
+      "Location 可以输入符号或合法地址，Format 决定如何解释显示的字节。",
+      "改变显示格式不会改变目标变量类型；先核对地址、元素宽度和字节序。"
+    ],
+    "width": 686,
+    "height": 332,
+    "bytes": 22807,
+    "group": "debug"
+  },
+  {
+    "id": "theia-ccs_debug-memory_view_export_data_dialog_theia",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_debug-memory_view_export_data_dialog_theia.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_debug-main.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_debug-memory_view_export_data_dialog_theia.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "Export Data：文件格式、地址和长度单位",
+    "context": "图中选择 Intel Hex，范围列名明确为 Length in Words；不要把示例地址或数字直接照抄。",
+    "regions": [
+      "r6"
+    ],
+    "settings": [
+      "s-views"
+    ],
+    "notes": [
+      "File 决定保存位置，Format 决定输出格式；MATLAB 导入前需确认格式是否适合读取。",
+      "每个 Memory Range 都要核对 Address 与长度单位；Words 不应未经确认当作 bytes。"
+    ],
+    "width": 544,
+    "height": 509,
+    "bytes": 17865,
+    "group": "settings"
+  },
+  {
+    "id": "theia-ccs_debug-graph_new",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_debug-graph_new.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_debug-main.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_debug-graph_new.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "New Graph：容量与表达式",
+    "context": "实际图只展示 Title、坐标标题、Capacity 和 Expression(s)；没有旧 Eclipse 的 DSP Data Type 对话框布局。",
+    "regions": [
+      "r7"
+    ],
+    "settings": [
+      "s-views"
+    ],
+    "notes": [
+      "Capacity 控制图中最大点数；输入目标变量的地址表达式后，核对数组类型和读取范围。",
+      "图形不会自行替程序采样，先准备并冻结已知数组再画第一条曲线。"
+    ],
+    "width": 403,
+    "height": 387,
+    "bytes": 8084,
+    "group": "settings"
+  },
+  {
+    "id": "theia-ccs_debug-graph_view",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_debug-graph_view.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_debug-main.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_debug-graph_view.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "Graph：波形区域、图例和两排工具栏",
+    "context": "图中是官方示例 g_ModemData.OutputBuffer 曲线，原图的蓝色英文说明由 TI 标注，不是本页生成的数据。",
+    "regions": [
+      "r7"
+    ],
+    "settings": [
+      "s-views"
+    ],
+    "notes": [
+      "Local toolbar 控制刷新、属性等；Graph modebar 提供缩放、移动和导出图像。",
+      "横轴图示为样本数量，刷新频率不等于采样频率；频率或时间换算需要真实采样率。"
+    ],
+    "width": 835,
+    "height": 424,
+    "bytes": 35433,
+    "group": "debug"
+  },
+  {
+    "id": "theia-ccs_debug-clk-enable",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_debug-clk-enable.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_debug-main.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_debug-clk-enable.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "状态栏 Clock：启用后的计数位置",
+    "context": "官方截图只证明计数显示的位置；不证明用户 A53 支持 Profile Clock。",
+    "regions": [
+      "r9"
+    ],
+    "settings": [
+      "s-views"
+    ],
+    "notes": [
+      "Clock 位于底部状态栏，旁边还能看到行列、编码等状态。",
+      "计数不是天然的微秒；必须知道事件类型及计数频率，再换算时间。"
+    ],
+    "width": 345,
+    "height": 60,
+    "bytes": 3828,
+    "group": "debug"
+  },
+  {
+    "id": "theia-ccs_debug-clk-setup",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_debug-clk-setup.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_debug-main.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_debug-clk-setup.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "Clock Setup：计数事件与清零方式",
+    "context": "图示 Count 为 Clock Cycles (40 Bit)；这是目标相关选项，不承诺 A53 提供该40位计数器。",
+    "regions": [
+      "r9"
+    ],
+    "settings": [
+      "s-views"
+    ],
+    "notes": [
+      "Count 选择要累计的事件，Reset Option 决定 Manual 或 Auto 清零。",
+      "实际目标没有可用事件时不能使用此工具，应采用板级 SDK 已验证的计时方式。"
+    ],
+    "width": 397,
+    "height": 143,
+    "bytes": 4871,
+    "group": "settings"
+  },
+  {
+    "id": "theia-ccs_debug-launch-json",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_debug-launch-json.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_debug-main.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_debug-launch-json.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "launch.json：启动配置的实际结构",
+    "context": "图中含 F28377D 双 C28x 核、XDS100v2 以及 MSPM0 配置；路径和核心名均不是用户 A53 配置。",
+    "regions": [
+      "r5",
+      "r8"
+    ],
+    "settings": [
+      "s-debug"
+    ],
+    "notes": [
+      "文件位于 .theia 下，configurations 数组可保存多组启动配置。",
+      "targetConfig、projectInfo 和 cores 等字段应由真实工程及器件决定；不要整段照抄示例。"
+    ],
+    "width": 662,
+    "height": 565,
+    "bytes": 27485,
+    "group": "settings"
+  },
+  {
+    "id": "theia-ccs_project-sysconfig-views",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_project-sysconfig-views.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_project-management2.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_project-sysconfig-views.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "SysConfig：外设项、参数区和生成配置",
+    "context": "图中展示 MSPM0 的 GPIO 与 DriverLib 配置；用户具体 A53 SoC 是否支持同类 SysConfig 模型待核对。",
+    "regions": [
+      "r7"
+    ],
+    "settings": [
+      "s-target"
+    ],
+    "notes": [
+      "左侧选外设模块，右侧改该实例的参数；同一模块可以包含多个实例。",
+      "识别哪些文件由 SysConfig 生成，避免直接改生成文件后下次生成又被覆盖。"
+    ],
+    "width": 1818,
+    "height": 909,
+    "bytes": 78637,
+    "group": "settings"
+  },
+  {
+    "id": "theia-ccs_getting-started-rex",
+    "version": "theia",
+    "file": "screenshots/theia-ccs_getting-started-rex.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/ccs_getting-started.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_ccs_20.5.1/_images/ccs_getting-started-rex.png",
+    "versionLabel": "来自 CCS 20.5.1 官方手册",
+    "title": "Resource Explorer：先筛器件与 SDK",
+    "context": "图示 TI Resource Explorer 欢迎页与筛选器；实际资源需要按联网状态和本地安装情况读取。",
+    "regions": [
+      "r7"
+    ],
+    "settings": [
+      "s-target"
+    ],
+    "notes": [
+      "Select Board or Device 先限定真实器件；左侧产品大类不等于当前项目的编译架构。",
+      "再按 Compiler、Kernel 等条件缩小资源范围，避免导入完全不同系列的例程。"
+    ],
+    "width": 1045,
+    "height": 796,
+    "bytes": 65312,
+    "group": "edit"
+  },
+  {
+    "id": "eclipse-ccs_doc_proj-gsg08",
+    "version": "eclipse",
+    "file": "screenshots/eclipse-ccs_doc_proj-gsg08.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_12.8.0/ccs_getting-started.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_12.8.0/_images/ccs_doc_proj-gsg08.png",
+    "versionLabel": "来自 CCS 12.8 官方手册",
+    "title": "Eclipse Project Explorer：Active 标记和 Includes",
+    "context": "来自 CCS12.8 手册的 TMS570LS04x 工程截图；它是旧版界面与 Cortex-R 示例，不是 A53。",
+    "regions": [
+      "r2"
+    ],
+    "settings": [
+      "s-project"
+    ],
+    "notes": [
+      "工程名后 [Active - Debug] 表示活动工程和构建配置。",
+      "Includes、Debug、源码目录与 .ccxml 有不同作用；[Active/Default] 是目标配置状态。"
+    ],
+    "width": 324,
+    "height": 176,
+    "bytes": 8906,
+    "group": "edit"
+  },
+  {
+    "id": "eclipse-proj_explorer",
+    "version": "eclipse",
+    "file": "screenshots/eclipse-proj_explorer.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_12.8.0/ccs_project-management.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_12.8.0/_images/proj_explorer.png",
+    "versionLabel": "来自 CCS 12.8 官方手册",
+    "title": "Eclipse 工程树与磁盘目录对照",
+    "context": "图中为较早外观的 C6748 DSP 工程，被收录在12.8手册；不声称截图运行版本就是12.8。",
+    "regions": [
+      "r2"
+    ],
+    "settings": [
+      "s-project"
+    ],
+    "notes": [
+      "Explorer 的 Debug 分组对应构建输出目录，图中可见 map/out 等生成文件。",
+      "链接脚本和源文件仍是磁盘文件，IDE里的树形展示不等于文件被复制到工作空间。"
+    ],
+    "width": 1301,
+    "height": 388,
+    "bytes": 102824,
+    "group": "edit"
+  },
+  {
+    "id": "eclipse-compiler_linker_options",
+    "version": "eclipse",
+    "file": "screenshots/eclipse-compiler_linker_options.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_12.8.0/ccs_project-management.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_12.8.0/_images/compiler_linker_options.png",
+    "versionLabel": "来自 CCS 12.8 官方手册",
+    "title": "Eclipse 编译器与链接器分类",
+    "context": "【仅 C2000 示例】截图是 C2000 Compiler / C2000 Linker，不可把它的选项语法用于 GNU A53。",
+    "regions": [
+      "r8"
+    ],
+    "settings": [
+      "s-gnu",
+      "s-project"
+    ],
+    "notes": [
+      "左侧 Include Options、Predefined Symbols、Optimization 是编译器子类；Linker 在另一组。",
+      "Configuration 显示 Debug [Active]；Edit Flags 显示/修改当前工具参数，修改后要核对构建命令。"
+    ],
+    "width": 837,
+    "height": 611,
+    "bytes": 44883,
+    "group": "settings"
+  },
+  {
+    "id": "eclipse-general_proj_properties_1",
+    "version": "eclipse",
+    "file": "screenshots/eclipse-general_proj_properties_1.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_12.8.0/ccs_project-management.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_12.8.0/_images/general_proj_properties_1.png",
+    "versionLabel": "来自 CCS 12.8 官方手册",
+    "title": "Eclipse General：器件、工具链与链接文件",
+    "context": "图中为 MSP432P401R、XDS110、TI v16.9.6.LTS，并且窗口外观较早；来自12.8手册不代表图本身拍于12.8。",
+    "regions": [
+      "r8"
+    ],
+    "settings": [
+      "s-project"
+    ],
+    "notes": [
+      "上方 Configuration 是当前被编辑的构建配置。",
+      "图中 .cmd 与 TI 工具链字段是旧版该工具链示例；GNU AArch64 应使用其真实 .ld 和编译命令。"
+    ],
+    "width": 778,
+    "height": 596,
+    "bytes": 39168,
+    "group": "settings"
+  },
+  {
+    "id": "eclipse-ccs_debug-main_view",
+    "version": "eclipse",
+    "file": "screenshots/eclipse-ccs_debug-main_view.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_12.8.0/ccs_debug-main.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_12.8.0/_images/ccs_debug-main_view.png",
+    "versionLabel": "来自 CCS 12.8 官方手册",
+    "title": "Eclipse 调试透视图：经典四大块",
+    "context": "【仅 C2000 示例】图中为 C28x_CPU1/CPU2 与 XDS110；蓝白布局是 Eclipse 时代的调试透视图。",
+    "regions": [
+      "r1",
+      "r3",
+      "r4",
+      "r5"
+    ],
+    "settings": [
+      "s-views"
+    ],
+    "notes": [
+      "左上 Debug 视图显示核心与调用栈，右上是 Variables / Expressions / Registers。",
+      "中央源码、底部 Console 和右上透视图切换区共同组成经典布局；Theia 没有相同的透视图体系。"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "bytes": 182338,
+    "group": "debug"
+  },
+  {
+    "id": "eclipse-ccs_debug-expressions_view",
+    "version": "eclipse",
+    "file": "screenshots/eclipse-ccs_debug-expressions_view.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_12.8.0/ccs_debug-main.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_12.8.0/_images/ccs_debug-expressions_view.png",
+    "versionLabel": "来自 CCS 12.8 官方手册",
+    "title": "Eclipse Expressions：旧版的表达式窗口",
+    "context": "图示 float[128] 数组及 @Data 地址；Theia 中该窗口称 Watch。",
+    "regions": [
+      "r5"
+    ],
+    "settings": [
+      "s-views"
+    ],
+    "notes": [
+      "展开数组看元素，列中显示类型、值和地址。",
+      "旧版工具栏图标外观与Theia不同，连续刷新仍需目标支持运行时访问。"
+    ],
+    "width": 709,
+    "height": 160,
+    "bytes": 37019,
+    "group": "debug"
+  },
+  {
+    "id": "eclipse-ccs_debug-memory_view",
+    "version": "eclipse",
+    "file": "screenshots/eclipse-ccs_debug-memory_view.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_12.8.0/ccs_debug-main.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_12.8.0/_images/ccs_debug-memory_view.png",
+    "versionLabel": "来自 CCS 12.8 官方手册",
+    "title": "Eclipse Memory Browser：地址与数据格式",
+    "context": "图中为 TI 风格16位十六进制显示；不能据此假定 A53 地址单位或变量宽度。",
+    "regions": [
+      "r6"
+    ],
+    "settings": [
+      "s-views"
+    ],
+    "notes": [
+      "旧版窗口叫 Memory Browser，新版简化为 Memory。",
+      "先看地址栏表达式与显示格式，再解释单元内容；格式改变不改目标数据。"
+    ],
+    "width": 1054,
+    "height": 485,
+    "bytes": 58026,
+    "group": "debug"
+  },
+  {
+    "id": "eclipse-ccs_debug-registers_view",
+    "version": "eclipse",
+    "file": "screenshots/eclipse-ccs_debug-registers_view.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_12.8.0/ccs_debug-main.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_12.8.0/_images/ccs_debug-registers_view.png",
+    "versionLabel": "来自 CCS 12.8 官方手册",
+    "title": "Eclipse Registers：外设组与描述列",
+    "context": "【仅 C2000 示例】图示 VCU、AdcaResultRegs、ADCRESULT0，不是 A53 的寄存器表。",
+    "regions": [
+      "r6"
+    ],
+    "settings": [
+      "s-views"
+    ],
+    "notes": [
+      "展开模块可看到寄存器名、值与描述；硬件映射寄存器需要按芯片手册解释。",
+      "你的实际 SoC 不提供同名外设时，不会出现这些分组。"
+    ],
+    "width": 709,
+    "height": 160,
+    "bytes": 43581,
+    "group": "debug"
+  },
+  {
+    "id": "eclipse-ccs_debug-disassembly_view",
+    "version": "eclipse",
+    "file": "screenshots/eclipse-ccs_debug-disassembly_view.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_12.8.0/ccs_debug-main.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_12.8.0/_images/ccs_debug-disassembly_view.png",
+    "versionLabel": "来自 CCS 12.8 官方手册",
+    "title": "Eclipse Disassembly：源码与汇编混排",
+    "context": "【仅 C2000 示例】图中 LCR、EINT、CLRC 等是 C28x 指令，不是 A64。",
+    "regions": [
+      "r6"
+    ],
+    "settings": [
+      "s-views"
+    ],
+    "notes": [
+      "一行源代码可以对应多条汇编；黄色行是当前上下文位置。",
+      "左边地址和机器码可帮助定位实际执行位置，不能仅凭C代码行号判断运行路径。"
+    ],
+    "width": 1054,
+    "height": 485,
+    "bytes": 51378,
+    "group": "debug"
+  },
+  {
+    "id": "eclipse-ccs_debug-target_config_editor",
+    "version": "eclipse",
+    "file": "screenshots/eclipse-ccs_debug-target_config_editor.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_12.8.0/ccs_debug-main.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_12.8.0/_images/ccs_debug-target_config_editor.png",
+    "versionLabel": "来自 CCS 12.8 官方手册",
+    "title": "Eclipse .ccxml：Basic、Advanced 与 Test Connection",
+    "context": "【仅 C2000 示例】图示 TMS320F280045 与 XDS110；你的连接应使用 XDS200 与实际 A53 SoC。",
+    "regions": [
+      "r7"
+    ],
+    "settings": [
+      "s-target"
+    ],
+    "notes": [
+      "Basic 页把连接、器件选择、保存和 Test Connection 放在同页。",
+      "保存配置后再测试；扫描链成功与程序能够正确加载是不同验收项。"
+    ],
+    "width": 1347,
+    "height": 618,
+    "bytes": 48195,
+    "group": "settings"
+  },
+  {
+    "id": "eclipse-auto_run_options",
+    "version": "eclipse",
+    "file": "screenshots/eclipse-auto_run_options.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_12.8.0/ccs_debug-main.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_12.8.0/_images/auto_run_options.png",
+    "versionLabel": "来自 CCS 12.8 官方手册",
+    "title": "Eclipse Auto Run and Launch Options",
+    "context": "侧栏可见 Cortex A53 Disassembly Style Options，但本图未显示具体板卡与探针；不据此假定与用户硬件相同。",
+    "regions": [
+      "r5",
+      "r8"
+    ],
+    "settings": [
+      "s-debug"
+    ],
+    "notes": [
+      "Run to symbol 填 main，并用 On a program load or restart 等复选框决定触发时机。",
+      "Realtime、Auto Run、Launch Options 是三组行为；启动连接与运行到main不要混为一谈。"
+    ],
+    "width": 1109,
+    "height": 529,
+    "bytes": 32002,
+    "group": "settings"
+  },
+  {
+    "id": "eclipse-program_load_options",
+    "version": "eclipse",
+    "file": "screenshots/eclipse-program_load_options.png",
+    "sourceUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_12.8.0/ccs_debug-main.html",
+    "imageUrl": "https://software-dl.ti.com/ccs/esd/documents/users_guide_12.8.0/_images/program_load_options.png",
+    "versionLabel": "来自 CCS 12.8 官方手册",
+    "title": "Eclipse Program/Memory Load Options",
+    "context": "本图侧栏含 Cortex A53 项，但具体目标未显示；选项有效性仍以当前调试核心为准。",
+    "regions": [
+      "r5",
+      "r8"
+    ],
+    "settings": [
+      "s-debug"
+    ],
+    "notes": [
+      "Verification Options 控制加载后的校验；Connection Options 控制连接后的停机或复位。",
+      "Reset on program load/restart 会改变启动前提；遇到跑不到main先核对这些设置与板级初始化。"
+    ],
+    "width": 1120,
+    "height": 818,
+    "bytes": 46472,
+    "group": "settings"
+  }
+]
