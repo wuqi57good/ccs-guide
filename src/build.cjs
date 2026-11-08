@@ -28,6 +28,7 @@ if(issues.length)throw new Error(issues.join('\n'));
 for(const p of manifest){if(!p.width||!p.height||!p.title||!p.group)issues.push('Incomplete screenshot '+p.id);}
 if(issues.length)throw new Error(issues.join('\n'));
 let html=read('template.html').replace('/*__STYLE__*/',()=>read('style.css')+'\n'+read('photos.css')).replace('/*__DATA__*/',()=>packs).replace('/*__APP__*/',()=>read('photos.js')+'\n'+read('app.js'));
+html=html.replace(/\r\n/g,'\n');
 const out=path.join(base,'../index.html');
 fs.writeFileSync(out,html,'utf8');
 const count=s=>(s.match(/[\u3400-\u9fff]/g)||[]).length;
